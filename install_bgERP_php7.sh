@@ -181,6 +181,7 @@ fi
 a2enmod headers
 a2enmod rewrite
 a2enmod ssl
+a2enmod allowmethods
 
 bash a2addvhost.sh -d=${DIRECTORY} -u=${VHOST} -s=yes
 
