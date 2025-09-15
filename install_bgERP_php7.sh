@@ -211,7 +211,7 @@ bash configure_php.ini.sh
 service apache2 restart
 
 cd ${DIRECTORY}
-git clone -b ${BRANCH} --single-branch https://github.com/bgerp/bgerp.git
+git clone -b ${BRANCH} --single-branch https://github.com/TUISTERa/bgerp.git
 cp bgerp/_docs/webroot . -R
 
 cp bgerp/_docs/conf . -R
