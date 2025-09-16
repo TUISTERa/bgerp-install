@@ -2,7 +2,7 @@
 set -e
 export DEBIAN_FRONTEND=noninteractive
 apt-get update  -yq
-apt-get install -yq --no-install-recommends apt-utils
+apt-get install -yq --no-install-recommends apt-utils gnupg2
 apt-get dist-upgrade -yq
 apt-get install -yq --no-install-recommends locales
 locale-gen en_US.UTF-8 en_GB.UTF-8 de_DE.UTF-8 es_ES.UTF-8 fr_FR.UTF-8 it_IT.UTF-8 bg_BG.UTF-8
@@ -22,7 +22,7 @@ apt-get install -yq --no-install-recommends \
 			php8.1-apcu php8.1-memcached php8.1-redis php8.1-opcache \
 			php8.1-amqp php8.1-igbinary php8.1-msgpack php8.1-pspell \
 			php8.1-xdebug \
-			apache2 libapache2-mod-php8.1
+			apache2 libapache2-mod-php8.1 \
 			wkhtmltopdf xvfb ghostscript imagemagick zbar-tools xpdf-utils p7zip-full p7zip-rar default-jre unoconv timelimit inkscape tnef jpegoptim libjpeg-turbo-progs optipng pngquant wget \
 			webp
 a2dismod mpm_event
