@@ -1,5 +1,5 @@
 #!/bin/bash
-export PHP_INI_PATH=/etc/php/7.4/apache2/php.ini
+export PHP_INI_PATH=/etc/php/8.1/apache2/php.ini
 
 upload_max_filesize=128M
 post_max_size=128M

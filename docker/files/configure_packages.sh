@@ -3,20 +3,20 @@ set -e
 ###########
 # PHP
 ###########
-cp -f /tmp/php.ini /etc/php/7.3/apache2/
-touch /etc/php/7.3/apache2/99-xdebug.ini
-chmod o+w /etc/php/7.3/apache2/99-xdebug.ini
+cp -f /tmp/php.ini /etc/php/8.1/apache2/
+touch /etc/php/8.1/apache2/99-xdebug.ini
+chmod o+w /etc/php/8.1/apache2/99-xdebug.ini
 #
 ln -snf /usr/share/zoneinfo/UTC /etc/localtime
 echo "UTC" > /etc/timezone
-echo "date.timezone = UTC" >> /etc/php/7.3/cli/conf.d/php.ini
-echo "date.timezone = UTC" >> /etc/php/7.3/apache2/php.ini
-echo 'opcache.memory_consumption=128' >>/etc/php/7.3/apache2/conf.d/45-opcache-recommended.ini 
-echo 'opcache.interned_strings_buffer=8' >>/etc/php/7.3/apache2/conf.d/45-opcache-recommended.ini 
-echo 'opcache.max_accelerated_files=4000'>>/etc/php/7.3/apache2/conf.d/45-opcache-recommended.ini 
-echo 'opcache.revalidate_freq=2' >>/etc/php/7.3/apache2/conf.d/45-opcache-recommended.ini
-echo 'opcache.fast_shutdown=1' >>/etc/php/7.3/apache2/conf.d/45-opcache-recommended.ini 
-echo 'mysqli.default_socket="/tmp/mysql.sock"' >> /etc/php/7.3/apache2/conf.d/50-mysql-recommended.ini
+echo "date.timezone = UTC" >> /etc/php/8.1/cli/conf.d/php.ini
+echo "date.timezone = UTC" >> /etc/php/8.1/apache2/php.ini
+echo 'opcache.memory_consumption=128' >>/etc/php/8.1/apache2/conf.d/45-opcache-recommended.ini 
+echo 'opcache.interned_strings_buffer=8' >>/etc/php/8.1/apache2/conf.d/45-opcache-recommended.ini 
+echo 'opcache.max_accelerated_files=4000'>>/etc/php/8.1/apache2/conf.d/45-opcache-recommended.ini 
+echo 'opcache.revalidate_freq=2' >>/etc/php/8.1/apache2/conf.d/45-opcache-recommended.ini
+echo 'opcache.fast_shutdown=1' >>/etc/php/8.1/apache2/conf.d/45-opcache-recommended.ini 
+echo 'mysqli.default_socket="/tmp/mysql.sock"' >> /etc/php/8.1/apache2/conf.d/50-mysql-recommended.ini
 
 
 ###########

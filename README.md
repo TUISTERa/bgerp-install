@@ -4,14 +4,14 @@ Bash скрипт за инсталиране на [bgERP](https://bgerp.com)
 ---
 
 ##### Изисквания
-- чиста инсталация на Ubuntu server 20.04, 22.04 или 24.04
+- чиста инсталация на Ubuntu server 22.04 или 24.04
 
 
 ##### Инсталация
 - пакета се сваля с командата: `git clone https://github.com/bgerp/bgerp-install.git`<br>
     или `wget https://github.com/bgerp/bgerp-install/archive/master.zip && unzip master.zip`
 - влиза се в директорията `bgerp-install`
-- стартира се `install_bgERP_php7.sh` като потребител `root` или със `sudo`
+- стартира се `install_bgERP.sh` като потребител `root` или със `sudo`
 Възможни са следните параметри за подаване:
     - `-h, --help`                 показва помощна информация
     - `-d, --directory`            задава директорията за инсталиране на bgERP /`EF_ROOT_PATH`/

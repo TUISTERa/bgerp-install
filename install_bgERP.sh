@@ -194,12 +194,13 @@ fi
 . /etc/os-release
 
 if [ $VERSION_ID = 22.04 ] || [ $VERSION_ID = 24.04 ]; then
-		# да се инсталира php 7.4
+		# да се инсталира php 8.1
 		apt install software-properties-common
 		add-apt-repository ppa:ondrej/php -y
-		apt-get install -y php7.4-mysql libapache2-mod-php7.4 php7.4-mbstring php7.4-imap php7.4-curl php7.4-apcu php7.4-gd php7.4-soap php7.4-xml php7.4-zip php7.4-pspell php7.4-ssh2 aspell-en aspell-bg tesseract-ocr tesseract-ocr-bul openssl webp git
+		apt-get install -y php8.1-mysql libapache2-mod-php8.1 php8.1-mbstring php8.1-imap php8.1-curl php8.1-apcu php8.1-gd php8.1-soap php8.1-xml php8.1-zip php8.1-pspell php8.1-ssh2 aspell-en aspell-bg tesseract-ocr tesseract-ocr-bul openssl webp git
 	
 	 else
+		# on newer versions, use system PHP
 		apt-get install -y php-mysql libapache2-mod-php php-mbstring php-imap php-curl php-apcu php-gd php-soap php-xml php-zip php-pspell php-ssh2 aspell-en aspell-bg tesseract-ocr tesseract-ocr-bul openssl webp git
 fi
 
