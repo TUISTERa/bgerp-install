@@ -12,18 +12,17 @@ apt-get install -yq --no-install-recommends software-properties-common
 add-apt-repository ppa:ondrej/php -y
 apt-get update  -yq
 apt-get install -yq --no-install-recommends \
-			php8.1-cli \
-			php8.1-pdo php8.1-mysql php8.1-mysqli php8.1-sqlite3 php8.1-pgsql php8.1-mongodb \
-			php8.1-curl php8.1-zip php8.1-bcmath php8.1-bz2 php8.1-gd php8.1-intl php8.1-imagick php8.1-mbstring \
-			php8.1-xml php8.1-xsl php8.1-dom \
-			php8.1-ldap php8.1-soap php8.1-xmlrpc php8.1-xmlwriter php8.1-phar \
-			php8.1-imap php8.1-bz2 \
-			php8.1-ctype php8.1-iconv php8.1-fileinfo php8.1-tokenizer \
-			php8.1-apcu php8.1-memcached php8.1-redis php8.1-opcache \
-			php8.1-amqp php8.1-igbinary php8.1-msgpack php8.1-pspell \
-			php8.1-xdebug \
-			apache2 libapache2-mod-php8.1 \
+			php7.4-cli \
+			php7.4-pdo php7.4-mysql php7.4-mysqli php7.4-sqlite3 php7.4-pgsql php7.4-mongodb \
+			php7.4-curl php7.4-zip php7.4-bcmath php7.4-bz2 php7.4-gd php7.4-intl php7.4-imagick php7.4-mbstring \
+			php7.4-xml php7.4-xsl php7.4-dom \
+			php7.4-ldap php7.4-soap php7.4-xmlrpc php7.4-xmlwriter php7.4-phar \
+			php7.4-imap php7.4-bz2 \
+			php7.4-ctype php7.4-iconv php7.4-fileinfo php7.4-tokenizer \
+			php7.4-apcu php7.4-memcached php7.4-redis php7.4-opcache \
+			php7.4-amqp php7.4-igbinary php7.4-msgpack php7.4-pspell \
+			php7.4-xdebug apache2 libapache2-mod-php7.4 \
 			wkhtmltopdf xvfb ghostscript imagemagick zbar-tools xpdf-utils p7zip-full p7zip-rar default-jre unoconv timelimit inkscape tnef jpegoptim libjpeg-turbo-progs optipng pngquant wget \
 			webp
 a2dismod mpm_event
-a2enmod php8.1 actions rewrite headers expires deflate env filter mime setenvif remoteip mpm_prefork
+a2enmod php7.4 actions rewrite headers expires deflate env filter mime setenvif remoteip mpm_prefork
